@@ -4,18 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet"></head>
+
     <title>Deployment Form</title>
 </head>
 <body>
-    <h1>Deployment Form</h1>
-    <form action="/" method="post">
-        <label for="access_key">AWS Access Key:</label>
-        <input type="text" id="access_key" name="access_key" required><br>
-        <label for="secret_key">AWS Secret Key:</label>
-        <input type="text" id="secret_key" name="secret_key" required><br>
-        <label for="github_repo_url">GitHub Repository URL:</label>
-        <input type="text" id="github_repo_url" name="github_repo_url" required><br>
-        <input type="submit" value="Submit">
-    </form>
+    <header class="header">
+        <div class="header_content">
+            <a href="#" class="logo">logo</a>
+            <nav class="nav">
+                <ul class="nav_list" >
+                    <li class="nav_item">
+                        <a href="https://github.com/rohan-zero/mok" class="nav_link">git</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">git</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">git</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">git</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="btn">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="main">
+
+            <div class="dep-form">      
+                <h1>Deployment</h1>
+                <form action="/" method="post">
+                    <div class="input-box">
+                        <input type="text" id="access_key" name="access_key" placeholder="AWS ACCESS KEY" required><br>
+                    </div>
+
+
+                    <div class="input-box">
+                        <input type="text" id="secret_key" name="secret_key" placeholder="AWS SECRET KEY" required><br>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" id="github_repo_url" name="github_repo_url" placeholder="gitHub repository url" required><br>
+                    </div>
+             
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+ 
+
+            <!-- <div class="vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CmxnAqQAJvk?si=3DncSbswzznX6bia" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+            </div> -->
+
+
+            <div class="description">
+
+            </div>
+        
+
+    </div>
+    
 </body>
 </html>
